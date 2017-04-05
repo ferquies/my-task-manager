@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ferquies.mytaskmanager.presentation.main.views.TodayFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/task_element" />
+
+    <include
+        android:id="@+id/create_task_dialog"
+        layout="@layout/task_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:elevation="26dp"
+        android:visibility="gone" />
+</RelativeLayout>
